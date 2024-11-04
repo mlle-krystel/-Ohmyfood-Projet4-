@@ -1,0 +1,35 @@
+# Fichiers système spécifiques aux OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configurations d'éditeurs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Dépendances et fichiers de build
+node_modules/
+dist/
+build/
+out/
+coverage/
+
+# Fichiers de logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Fichiers de verrouillage des paquets (JSON)
+package-lock.json      # Lock pour NPM
+yarn.lock              # Lock pour Yarn (fichier .lock, pas JSON)
+pnpm-lock.yaml         # Lock pour pnpm
+
+# Fichiers de configuration JSON générés par des outils
+*.config.json          # Exemple pour tout fichier de config JSON généré
+report.json            # Rapport JSON (ex. de couverture de tests)
+.cache.json            # Fichiers de cache JSON
+*.history.json         # Fichiers de version ou d'historique

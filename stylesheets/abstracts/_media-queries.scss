@@ -87,13 +87,14 @@
   .restaurants-page footer {
     align-items: baseline;
     flex-direction: row-reverse;
-    padding: 20px 20px 0px;
+    padding: 20px 30px 0px;
     gap: 4em;
   }
 
   .homepage footer ul,
   .restaurants-page footer ul {
+    
     display: flex;
-    gap: 1.5em;
+    gap: 1em;
   }
 }

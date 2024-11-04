@@ -162,7 +162,7 @@
     align-items: baseline;
     flex-direction: row-reverse;
     padding: 20px 20px 0px;
-    gap: 4em;
+    gap: 6em;
   }
   .homepage footer ul,
   .restaurants-page footer ul {
