@@ -1,0 +1,49 @@
+// Polices d'écriture
+$body-font: "Roboto", sans-serif;
+$logo-font: "Shrikhand", sans-serif;
+
+// Couleurs des textes
+$footer-text-color: #ffffff;
+$text-color: #101010;
+
+// Tailles des textes
+$logo-header-size: 1.875rem; // 30px
+$h2-size: 1.5rem; // 24px
+$h3-size: 1.125rem; // 18px
+$card-subtitle-size: 1.0625rem; // 17px
+$other-size: 1rem; // 16px
+$menu-details-size: 15px; // 15px
+$restaurant-title-size: 1.75rem; // 28px
+$badge-size: 0.875rem; // 14px
+
+// Les couleurs
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$third-color: #99e2d0;
+
+// Background colors
+$background-search-bar: #eaeaea;
+$white-background: #ffffff;
+$background-card-color: #f6f6f6;
+$footer-background-color: #353535;
+
+// Button colors
+$linear-gradient: linear-gradient(
+  0deg,
+  rgb(147, 86, 220) 0%,
+  rgb(255, 121, 218) 97%
+);
+
+// Shadow
+$explore-button-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+
+$button-shadow-focus: 0px 2px 15px 8px rgba(0, 0, 0, 0.3);
+
+// hauteur btn
+$button-height: 50px;
+
+// explorer btn
+$expolrer-withd: 218px;
+
+// bouton pages restaurants
+$pages-button-with: 186px;

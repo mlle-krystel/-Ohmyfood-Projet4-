@@ -1,0 +1,133 @@
+.homepage {
+  .header-logo {
+    background: $white-background;
+    display: flex;
+    font-family: $logo-font;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // search bar
+  .search-bar {
+    font-size: $other-size;
+    height: 50px;
+    background-color: $background-search-bar;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    justify-content: center;
+    box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.15),
+      0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 3px;
+
+    input {
+      border: none;
+      background-color: $background-search-bar;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  //   présentation & slogan
+
+  .presentation {
+    width: 100%;
+    background-color: $background-card-color;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .slogan {
+    font-weight: 100;
+    font-size: $card-subtitle-size;
+    color: $footer-background-color;
+  }
+
+  // instruction & step l.40 à 63
+  .instruction {
+    // display: flex;
+    // flex-direction: column;
+    height: auto;
+    background: #FFFFFF;
+ 
+    padding: 20px 20px 40px;
+    // display: flex;
+    // flex-direction: column;
+    // align-content: center;
+    // align-items: baseline;
+    // justify-content: baseline;
+    // flex-wrap: wrap;
+  }
+
+ 
+
+  // étapes
+
+  .step-by-step {
+    // display: flex;
+    // flex-direction: column;
+    // gap: 1.5em;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 2em;
+    width: 100%; 
+  max-width: 400px; 
+  margin: 0 auto;
+  }
+
+  .step-by-step li {
+    position: relative;
+    transition: all 0.5s ease;
+  }
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+  gap: 25px;
+  width: 350px;
+  height: 72px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.step-name {
+  color: #101010;
+  font-size: $other-size;
+  font-weight: 500;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.step i {
+  font-size: 1.3rem;
+  color: #7e7e7e;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.number {
+  font-size: $badge-size;
+  position: absolute;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 10px 13px;
+  color: $footer-text-color;
+  background: $primary-color;
+  top: 16px;
+  left: -15px;
+}

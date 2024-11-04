@@ -1,0 +1,99 @@
+@media screen and (min-width: 768px) {
+  // page index
+
+  .homepage .instruction {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .homepage .instruction .fonction {
+    display: flex;
+  }
+
+  .homepage .instruction .step-by-step {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    // width: 100%;
+  }
+
+  .homepage .all-step .step {
+    width: 310px;
+  }
+
+  // la section des cards
+
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: baseline;
+
+    flex-wrap: wrap;
+  }
+
+  .restaurants-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 2em;
+    //   les cards
+
+    .block {
+      width: 490px;
+      max-height: 251px;
+      transition: all 1s ease;
+    }
+  }
+
+  // page des restaurants
+  .restaurants-page {
+    .menu-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1050px;
+    }
+
+    .menu-header {
+      gap: 5em;
+    }
+
+    .card {
+      min-width: 634px;
+    }
+
+    .card-content {
+      max-width: 500px;
+      
+    }
+    .menu-name,
+    .description {
+      white-space: nowrap;
+      overflow: visible !important;
+      text-overflow: clip !important;
+     
+    }
+    
+  }
+
+  //   footer
+  .homepage footer,
+  .restaurants-page footer {
+    align-items: baseline;
+    flex-direction: row-reverse;
+    padding: 20px 20px 0px;
+    gap: 4em;
+  }
+
+  .homepage footer ul,
+  .restaurants-page footer ul {
+    display: flex;
+    gap: 1.5em;
+  }
+}

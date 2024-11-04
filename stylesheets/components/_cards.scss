@@ -1,0 +1,104 @@
+.homepage {
+  .restaurants {
+    background-color: $background-card-color;
+
+    padding: 20px 20px 60px 20px;
+  }
+
+  .section-title {
+    margin-top: 25px;
+    // padding: 40px 0 0 20px;
+  }
+
+  // card
+  .block {
+    min-width: 346px;
+    max-height: 251px;
+    margin-bottom: 25px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    // border: $explore-button-shadow;
+    transition: all 1s ease-in-out;
+
+    img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+
+  // contenu sans photo
+  .card-content {
+    height: 60px;
+    padding-left: 15px;
+    line-height: 0.5;
+    text-align: start;
+  }
+
+  .card-title {
+    font-size: $h3-size;
+    font-weight: 700;
+  }
+
+  .card-subtitle {
+    font-size: $card-subtitle-size;
+    color: #000000;
+    font-weight: 100;
+  }
+
+  // test avec checkbox
+  .card-rating-love {
+    position: absolute;
+    right: 40px;
+    font-size: 26px;
+    cursor: pointer;
+    bottom: 30px;
+
+    input {
+      display: none;
+    }
+
+    input:checked + label {
+      .fa-regular {
+        display: none;
+      }
+
+      .fa-solid {
+        opacity: 1;
+      }
+    }
+
+    .fa-regular {
+      padding: 1px;
+      position: absolute;
+    }
+
+    .fa-solid {
+      background: $linear-gradient;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      @include pointer-cursor;
+      opacity: 0;
+      transition: opacity 500ms;
+      padding: 1px;
+      position: relative;
+    }
+  }
+
+  /* Style pour le badge */
+  .badge {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    font-size: $badge-size;
+    font-weight: 500;
+    color: #008766;
+    background-color: $third-color;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,115 @@
+.homepage {
+  .loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $background-search-bar;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    animation: fade-out 3s ease-in-out forwards;
+  }
+
+  .hypnotic {
+    width: 110px;
+    height: 44px;
+    border: 4px solid #99e2d0;
+    border-radius: 50%;
+    display: grid;
+    animation: hypnotic-ds34hk 2.4s infinite linear;
+  }
+
+  .hypnotic:before,
+  .hypnotic:after {
+    content: "";
+    grid-area: 1/1;
+    border: inherit;
+    border-radius: 50%;
+    animation: inherit;
+    animation-duration: 3s;
+  }
+
+  .hypnotic:after {
+    --s: -1;
+  }
+
+  @keyframes hypnotic-ds34hk {
+    100% {
+      transform: rotate(calc(var(--s, 1) * 1turn));
+    }
+  }
+
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+}
+
+//animation pages restaurants
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-category {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+  animation-delay: 0.5s;
+}
+
+//  animation coeur hover
+.restaurants-page {
+  .card-rating {
+    position: relative;
+    width: 23px;
+    right: 41px;
+    height: 20px;
+    @include pointer-cursor;
+  }
+
+  .fa-heart {
+    position: absolute;
+    right: 3px;
+    font-size: 21px;
+  }
+  .full-heart {
+    position: absolute;
+    right: 2.5px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .full-heart {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .card-rating:hover .full-heart {
+    opacity: 1;
+  }
+
+  .card-rating:hover .empty-heart {
+    opacity: 0;
+  }
+}
+

@@ -1,0 +1,19 @@
+// bouton  section presentation l.31 à 36
+.explore-btn {
+  @include explore-btn;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+// restaurants-page
+.commande-btn {
+  @include commande-btn;
+}
+
+.commande-btn-container {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,159 @@
+.restaurants-page {
+  .menu-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 275px;
+    margin: 0;
+  }
+
+  .menu-section {
+    text-align: center;
+    background: $background-card-color;
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+    top: -40px;
+    border-radius: 40px 40px 0 0;
+    margin-bottom: -40px;
+  }
+
+ 
+ 
+  .menu-title {
+    font-size: 1.8rem;
+    font-family: "Shrikhand", sans-serif;
+    text-align: start;
+    margin-left: 30px;
+  }
+
+ 
+
+  .menu-category {
+    text-align: left;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+    border-bottom: 3px solid $third-color;
+    width: 40px;
+    padding-bottom: 5px;
+  }
+
+  .card {
+    max-height: 4.3rem;
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 3px;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+
+    h4 {
+      font-size: $h3-size;
+      font-weight: 500;
+      
+      
+    }
+     
+    .menu-name,
+    .description {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+
+  .description {
+    font-size: $menu-details-size;
+    font-weight: 300;
+    margin: 0;
+  }
+  }
+
+  .menu-name {
+    font-weight: 500;
+    font-size: $h3-size;
+    margin: 0;
+  }
+
+ 
+
+  // menu choice
+  .card-action {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  //prix & selection menu
+
+  .price {
+    font-weight: 700;
+    font-size: $menu-details-size;
+    right: 0;
+    padding-top: 18px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+
+  // Coche de validation 
+  .card-content-check {
+    height: 4.3rem;
+    width: 0;
+    border-radius: 0 15px 15px 0;
+    background-color: $third-color;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -16px;
+    opacity: 1;
+    cursor: pointer;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+  }
+
+  .card-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 64px;
+    height: 69px;
+    left: -35px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .card-checkbox:checked ~ .price {
+    transform: translateX(-8px);
+  }
+
+  .card-checkbox:checked ~ .card-content-check {
+    width: 62px;
+    opacity: 1;
+  }
+

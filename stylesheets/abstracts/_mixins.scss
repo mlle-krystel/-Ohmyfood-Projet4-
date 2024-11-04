@@ -1,0 +1,94 @@
+// Mixin pour alignement centré
+@mixin center-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin pour aucun bord
+@mixin no-border {
+  border: none;
+}
+
+// Mixin pour le cursor
+@mixin pointer-cursor {
+  cursor: pointer;
+}
+
+// Mixin pour autre linear-gradient
+@mixin other-linear-gradient {
+  background: rgb(147, 86, 220);
+
+  // Dégradé pour les anciennes versions de Firefox (du violet au rose, de haut en bas)
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 97%
+  );
+
+  // Dégradé pour les anciennes versions de Chrome et Safari (du violet au rose)
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 97%
+  );
+
+  // Dégradé standard pour les navigateurs modernes (violet -> rose)
+  background: linear-gradient(
+    180deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 97%
+  );
+}
+
+@mixin align-menu {
+  padding: 10px;
+}
+
+@mixin explore-btn {
+  display: flex;
+  justify-content: center;
+  width: $expolrer-withd;
+  height: $button-height;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  @include no-border;
+  border-radius: 25px;
+  @include pointer-cursor;
+  color: $footer-text-color;
+  font-size: $other-size;
+  background: $linear-gradient;
+  box-shadow: $explore-button-shadow;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    opacity: 0.9;
+    box-shadow: $button-shadow-focus;
+    transform: translateY(1px);
+    transition: all 200ms ease-in-out;
+  }
+}
+
+@mixin commande-btn {
+  display: flex;
+  justify-content: center;
+  width: $pages-button-with;
+  height: $button-height;
+  margin: 40px;
+  padding-top: 15px;
+  text-align: center;
+  @include no-border;
+  border-radius: 25px;
+  @include pointer-cursor;
+  color: $footer-text-color;
+  font-size: $other-size;
+  background: $linear-gradient;
+  box-shadow: $explore-button-shadow;
+
+  &:hover {
+    opacity: 0.9;
+    box-shadow: $button-shadow-focus;
+    transform: translateY(1px);
+    transition: all 200ms ease-in-out;
+  }
+}

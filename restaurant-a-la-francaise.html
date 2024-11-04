@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ohmyfood</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Shrikhand&display=swap" rel="stylesheet">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+    </head>
+    <body>
+        <main class="restaurants-page">
+            <!-- Header -->
+            <header class="restaurants-header">
+                <div class="back-homepage">
+                    <a href="index.html" aria-label="Retour à la page d'accueil">
+                        <i class="fa-solid fa-arrow-left">
+                        </i
+          >
+                    </a>
+                </div>
+                <div class="restaurants-header-logo">
+                    <h1 class="header-logo">ohmyfood</h1>
+                </div>
+            </header>
+            <!-- Restaurant Image -->
+            <div class="images">
+                <img src="images/restaurants/A-la-francaise.jpg" alt="Un brunch avec des œufs bénédictine servi avec des boissons">
+            </div>
+            <!-- Menu Section -->
+            <section class="menu-section">
+                <div class="menu-header">
+                    <h2 class="menu-title">À la française</h2>
+                    <div class="card-rating">
+                        <i class="fa-regular fa-heart"></i>
+                        <img src="images/SVG/full.svg" alt="coeur plein" class="full-heart">
+                    </div>
+                </div>
+                <!-- Entrées -->
+                <div class="menu-category">
+                    <h3 class="category-title">ENTRÉES</h3>
+                    <!-- Entrée Card 1 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="menu-name">Tartares de poulpe acidulé</h4>
+                            <p class="description">Aux zestes d'orange</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="price">25€</span>
+                            <input type="checkbox" id="check1" class="card-checkbox">
+                            <label for="check1" class="card-content-check" aria-label="Sélectionner Tartares de poulpe acidulé">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Entrée Card 2 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="menu-name">Velouté de légumes d'antan</h4>
+                            <p class="description">Carotte, panais, topinambour</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="price">35€</span>
+                            <input type="checkbox" id="check2" class="card-checkbox">
+                            <label for="check2" class="card-content-check" aria-label="Sélectionner Velouté de légumes d'antan">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Entrée Card 3 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="menu-name">Soupe à l'oignon</h4>
+                            <p class="description">Revisitée</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="price">20€</span>
+                            <input type="checkbox" id="check3" class="card-checkbox">
+                            <label for="check3" class="card-content-check" aria-label="Sélectionner Soupe à l'oignon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plats -->
+                <div class="menu-category">
+                    <h3 class="category-title">PLATS</h3>
+                    <!-- Plat Card 1 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="menu-name">Coquilles Saint-Jacques</h4>
+                            <p class="description">Accompagné d'une purée de panais</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="price">40€</span>
+                            <input type="checkbox" id="check4" class="card-checkbox">
+                            <label for="check4" class="card-content-check" aria-label="Sélectionner Coquilles Saint-Jacques">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Plat Card 2 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="menu-name">Magret de canard</h4>
+                            <p class="description">Et parmentier de pommes de terre</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="price">35€</span>
+                            <input type="checkbox" id="check5" class="card-checkbox">
+                            <label for="check5" class="card-content-check" aria-label="Sélectionner Magret de canard">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Plat Card 3 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="menu-name">Pigeonneau d'Ille-et-Vilaine</h4>
+                            <p class="description">Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="price">44€</span>
+                            <input type="checkbox" id="check6" class="card-checkbox">
+                            <label for="check6" class="card-content-check" aria-label="Sélectionner Pigeonneau d'Ille-et-Vilaine">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desserts -->
+                <div class="menu-category">
+                    <h3 class="category-title">DESSERTS</h3>
+                    <!-- Dessert Card 1 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="menu-name">Pétales de violettes glacés</h4>
+                            <p class="description">Et purée de noisettes</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="price">18€</span>
+                            <input type="checkbox" id="check7" class="card-checkbox">
+                            <label for="check7" class="card-content-check" aria-label="Sélectionner Pétales de violettes glacés">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Dessert Card 2 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="menu-name">Fondant au chocolat</h4>
+                            <p class="description">Revisité</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="price">22€</span>
+                            <input type="checkbox" id="check8" class="card-checkbox">
+                            <label for="check8" class="card-content-check" aria-label="Sélectionner Fondant au chocolat">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Dessert Card 3 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="menu-name">Millefeuilles croustillant</h4>
+                            <p class="description">Myrtilles et pâte d'amande</p>
+                        </div>
+                        <div class="card-action">
+                            <span class="price">23€</span>
+                            <input type="checkbox" id="check9" class="card-checkbox">
+                            <label for="check9" class="card-content-check" aria-label="Sélectionner Millefeuilles croustillant">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Commande Button -->
+                <button class="commande-btn" aria-label="Passer une commande">
+                    Commander
+                </button>
+            </section>
+            <!-- Footer -->
+            <footer>
+                <h3 class="footer-logo">ohmyfood</h3>
+                <div class="link">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-utensils"></i>
+                            <a href="#" aria-label="Proposer un restaurant">Proposer un restaurant
+                            </a
+              >
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-handshake"></i>
+                            <a href="#" aria-label="Devenir partenaire">Devenir partenaire</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Mentions légales">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@ohmyfood.com" aria-label="Envoyer un email">Contact
+                            </a
+              >
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
