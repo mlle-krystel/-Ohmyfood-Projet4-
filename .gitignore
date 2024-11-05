@@ -33,3 +33,6 @@ pnpm-lock.yaml         # Lock pour pnpm
 report.json            # Rapport JSON (ex. de couverture de tests)
 .cache.json            # Fichiers de cache JSON
 *.history.json         # Fichiers de version ou d'historique
+
+*.json
+
