@@ -49,6 +49,39 @@
     padding-bottom: 5px;
   }
 
+  .card-rating {
+    position: relative;
+    width: 23px;
+    right: 41px;
+    height: 20px;
+    @include pointer-cursor;
+  }
+
+  .fa-heart {
+    position: absolute;
+    right: 3px;
+    font-size: 21px;
+  }
+  .full-heart {
+    position: absolute;
+    right: 2.5px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .full-heart {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .card-rating:hover .full-heart {
+    opacity: 1;
+  }
+
+  .card-rating:hover .empty-heart {
+    opacity: 0;
+  }
+
   .card {
     max-height: 4.3rem;
     width: 350px;
