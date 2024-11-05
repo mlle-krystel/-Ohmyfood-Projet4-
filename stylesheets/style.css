@@ -89,6 +89,89 @@
     margin: 0 auto;
     padding: 0 20px;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .homepage .instruction {
+    /* === Page d'accueil (index) === */
+    /* Section Instructions */
+    /* === Section Restaurants Cards === */
+    /* === Page Restaurants === */
+    /* === Footer (Commun à toutes les pages) === */
+  }
+  .homepage .instruction .homepage .instruction {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .homepage .instruction .homepage .instruction .fonction {
+    display: flex;
+  }
+  .homepage .instruction .homepage .instruction .step-by-step {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+  }
+  .homepage .instruction .homepage .all-step .step {
+    width: 310px;
+  }
+  .homepage .instruction .restaurants {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .homepage .instruction .restaurants-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 2em;
+  }
+  .homepage .instruction .restaurants-card .block {
+    width: 490px;
+    max-height: 251px;
+    transition: all 1s ease;
+  }
+  .homepage .instruction .restaurants-page .menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1050px;
+  }
+  .homepage .instruction .restaurants-page .menu-header {
+    gap: 5em;
+  }
+  .homepage .instruction .restaurants-page .card {
+    min-width: 634px;
+  }
+  .homepage .instruction .restaurants-page .card-content {
+    max-width: 500px;
+  }
+  .homepage .instruction .restaurants-page .menu-name,
+  .homepage .instruction .restaurants-page .description {
+    white-space: nowrap;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+  .homepage .instruction .homepage footer,
+  .homepage .instruction .restaurants-page footer {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    padding: 20px 30px 0px;
+    gap: 4em;
+  }
+  .homepage .instruction .homepage footer ul,
+  .homepage .instruction .restaurants-page footer ul {
+    display: flex;
+    gap: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
   .homepage .instruction .fonction {
     display: flex;
   }
